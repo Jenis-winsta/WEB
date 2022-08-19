@@ -1,0 +1,29 @@
+.size{
+    font-size: larger;
+    
+}
+.element{
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+.element:hover{
+    
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+    color:aliceblue;
+    background-color: aqua;
+    
+    
+    display: block;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+}
