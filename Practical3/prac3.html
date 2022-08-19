@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <script>
+        function add()
+        {   num1=parseInt(prompt("Enter first number"));
+            num2=parseInt(prompt("Enter second number"));
+            sum=num1+num2;
+            alert("SUM:"+sum);
+        }
+        function sub()
+        {   num1=parseInt(prompt("Enter first number"));
+            num2=parseInt(prompt("Enter second number"));
+            alert("Subtraction:"+(num1-num2));
+        }
+        function mul()
+        {   num1=parseInt(prompt("Enter first number"));
+            num2=parseInt(prompt("Enter second number"));
+            alert("Multiplication:"+(num1*num2));
+        }
+        function divide()
+        {   num1=parseInt(prompt("Enter first number"));
+            num2=parseInt(prompt("Enter second number"));
+            alert("Division: "+(num1/num2));
+        }
+        function sin()
+        {   num1=parseInt(prompt("Enter a number(in radians):"));
+            alert("Sine of the entered no.: "+Math.sin(num1));
+        }
+        function cos()
+        {   num1=parseInt(prompt("Enter a number(in radians):"));
+            alert("Cosine of the entered no.: "+Math.cos(num1));
+        }
+        function tan()
+        {   num1=parseInt(prompt("Enter a number"));
+            alert("Tan of the entered no.: "+Math.tan(num1));
+        }
+        function log()
+        {   num1=parseInt(prompt("Enter a number"));
+            alert("Natural Log of the entered no.: "+Math.log(num1));
+        }
+        function log10()
+        {   num1=parseInt(prompt("Enter a number"));
+            alert("Log to the base 10 of the entered no.: "+Math.log10(num1));
+        }
+    </script>
+    <style>
+        button{
+            width: 200px;
+            height: 100px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <button onclick="add()">ADD</button>
+        <button onclick="sub()">SUBTRACT</button>
+        <button onclick="mul()">MULTIPLY</button>
+        <button onclick="divide()">DIVIDE</button><br><br>
+        <button onclick="sin()">SINE</button>
+        <button onclick="cos()">COSINE</button>
+        <button onclick="tan()">TAN</button><br><br>
+        <button onclick="log()">LOG</button>
+        <button onclick="log10()">LOG(10)</button>
+    </form>
+</body>
+</html>
