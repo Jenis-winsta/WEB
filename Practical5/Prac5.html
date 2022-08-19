@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style1.css">
+    <title>CountDown</title>
+</head>
+<body>
+    <p class="para"> INDEPENDENCE DAY COUNTDOWN </p>
+    <div class="main">
+        <div class="days">
+            <p>Days</p>
+            <p id="m_days"> </p>
+        </div>
+        
+        <div class="days">
+            <p>Hours </p>
+            <p id="m_hours"></p>
+        </div>
+        
+        <div class="days">
+            <p>Minutes</p>
+            <p id="m_min">  </p>
+        </div>
+        
+        <div class="days">
+            <p>Seconds</p>
+            <p id="m_sec">  </p>  
+        </div>
+    </div>
+    
+ 
+    <script>
+        //function day(){}
+        
+
+       
+        function day(){
+            const today_date= new Date();//fetches the current date
+            const future_date= new Date(2022,07,14);
+            
+            days = future_date.getDate()-today_date.getDate();
+            /*hours =days*24-today_date.getHours();
+            minutes= hours*60-today_date.getMinutes();
+            seconds=minutes*60-today_date.getSeconds();*/
+
+            hours=23-today_date.getHours();
+            minutes=59-today_date.getMinutes();
+            seconds=59-today_date.getSeconds();
+
+            document.getElementById("m_days").innerHTML=days;
+            document.getElementById("m_hours").innerHTML=hours;
+            document.getElementById("m_min").innerHTML=minutes;
+            document.getElementById("m_sec").innerHTML=seconds;
+        }
+        
+        
+       
+        var x= setInterval(day,1000);//calling the function day() every 1 second
+
+    </script> 
+    
+</body>
+</html>
