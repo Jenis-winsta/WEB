@@ -1,0 +1,34 @@
+*{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+.days{
+    background-color: blue;
+    width: 10%;
+    height: 100px;
+    text-align: center;
+    border: 7px solid aqua;  
+}
+p.para{
+    text-align: center;
+    color:black;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    float:center;
+    position: fixed;
+    top: 10%;
+    left:38%;
+}
+.main{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+body{
+    background-color: aqua;
+}
