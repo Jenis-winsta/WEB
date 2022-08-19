@@ -1,0 +1,36 @@
+*{	text-align:center;
+	font-size:12;
+	font-family:Comic Sans MS;
+	color: aliceblue;
+	}
+.timetable{
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+table, th, td, tr{
+	border:2px white solid;
+}
+#RTd:hover{ Background-color:red;
+	color:white;	}
+
+#RTl:hover{ Background-color:blue;
+	color:white;	}
+
+#SK:hover{ Background-color: #C71585;
+	color:white;
+}
+#LF:hover{ Background-color:#00FF00;
+	color:white;	}
+
+#AJ:hover{ Background-color:#00a36c;
+	color:white;	}
+
+#break:hover{ Background-color:#ffa07a;
+	color:black;	}
+
+#SPC:hover{ Background-color:#9999ff;
+	color:black;	}
+
+#Prac:hover{ Background-color:#ff00ff;
+	color:white;	}
