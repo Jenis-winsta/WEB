@@ -1,0 +1,27 @@
+.text{
+    font-weight: bold;
+}
+.button{
+    background-color: #8E44AD ; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.title{
+    color:white;
+    padding:10px;
+}
+/*input:focus{
+    outline-color:red;
+}
+ .display{
+    color: red;
+    font-size: large;
+} */
+h1{
+    color:red;
+}

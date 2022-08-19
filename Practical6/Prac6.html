@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Registration form</title>
+    
+</head>
+<body>
+    <form id="myForm">
+    <div class="row" style="background-color:#8E44AD ;">
+        <div class="col-sm-4"> </div>
+        <div class="col-sm-4">
+            <h1 class="title">Registration form</h1>
+        </div>
+        <div class="col-sm-4"></div>
+    </div><!--row 1 ends-->
+    <br>
+    <div class="row text">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3 ">
+            <label>Name:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="col-sm-3"></div>
+    </div><!--row 2 ends-->
+    <br>
+    <div class="row text">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <label>UID:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="number" id="uid" name="uid">
+        </div>
+        <div class="col-sm-3"></div>
+    </div><!--row 3 ends-->
+    <br>
+    <div class="row text">  <!--row 4 begins-->
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <label>Email:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="email" id="email" name="email"><br>
+        </div>
+        <div class="col-sm-3"></div>
+    </div><!--row 4 ends-->
+    <br>
+    <div class="row "> <!--row 5 begins-->
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3  text">
+            <label>Year:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="radio" name="Year" value="fy">FY&nbsp;&nbsp;
+            <input type="radio" name="Year" value="sy">SY&nbsp;&nbsp;
+            <input type="radio" name="Year" value="ty">TY
+        </div>
+        <div class="col-sm-3"></div>
+    </div><!--row 5 ends-->
+    <br>
+    <div class="row text"><!--row 6 begins-->
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <label>Any question:</label>
+        </div>
+        <div class="col-sm-3">
+            <textarea name="questions"></textarea>
+        </div>
+        <div class="col-sm-3"></div>
+    </div><!--row 6 ends-->
+    <br>
+    <div class="row"><!--row 7 begins-->
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <input type="submit" class="button">
+        </div>
+        <div class="col-sm-3">
+            <input type="reset" class="button">
+        </div>
+        <div class="col-sm-3"></div>
+    </div><!--row 7 ends-->
+    <div class="row"><!--row 8 begins-->
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <p id="display"></p>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('myForm').onsubmit=function(){
+        var pattern = /^[a-z]{3,25}$/i; //i is case insensitive matching
+        var patt_uid=/^[0-9]{6,6}$/;
+        var patt_email=/^[a-z0-9._]+@[a-z]+.[a-z]{2,5}$/i;
+        
+        var txt=document.getElementById('name');
+        var uid=document.getElementById('uid');
+        var email=document.getElementById('email');
+
+        if(!pattern.test(txt.value)){
+            var message="<h1>Incorrect name</h1>\n <h3>Minimum 3 characters</h3>";
+            document.getElementById('display').innerHTML=message; 
+            txt.focus();
+            return false;             
+        }else if(!patt_uid.test(uid.value)){
+            var message="<h1>Incorrect UID</h1>\n <h3>UID is a 6-digit no.</h3>";
+            document.getElementById('display').innerHTML=message; 
+            txt.focus();
+            return false;
+        }else if(!patt_email.test(email.value)){
+            var message="<h1>Incorrect Email</h1>";
+            document.getElementById('display').innerHTML=message;
+            txt.focus();
+            return false;
+        }
+
+    }
+    
+</script>
+</body>
+</html>
