@@ -9,9 +9,9 @@ GitHub WebDesigning
 [Link](https://jenis-winsta.github.io/WEB/Practical1/Win_timetable.html)
 
 ### PRACTICAL 2:
-(Table v/s bootstrap: create a website using table and bootstrap)
-[Link](https://jenis-winsta.github.io/WEB/Practical2/bootstrap_web.html)
-[Link](https://jenis-winsta.github.io/WEB/Practical2/tab_web.html)
+(Table v/s bootstrap: create a website using table and bootstrap)  
+[Link1](https://jenis-winsta.github.io/WEB/Practical2/bootstrap_web.html)  
+[Link2](https://jenis-winsta.github.io/WEB/Practical2/tab_web.html)
 
 ### PRACTICAL 3:
 (JavaScript:Create a basic calculator)
